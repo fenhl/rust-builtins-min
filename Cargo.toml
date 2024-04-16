@@ -1,0 +1,9 @@
+[package]
+name = "rust-n64-test"
+edition = "2021"
+
+[profile.release]
+lto = true
+
+[lib]
+crate-type = ["staticlib"]

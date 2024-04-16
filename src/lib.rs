@@ -1,0 +1,8 @@
+#![no_std]
+
+use core::panic::PanicInfo;
+
+#[panic_handler]
+#[no_mangle] fn panic(_: &PanicInfo<'_>) -> ! {
+    loop {}
+}
